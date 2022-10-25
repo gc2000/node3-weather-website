@@ -24,10 +24,11 @@ const forecast = (lat, long, callback) => {
         body.current.temperature +
         " degrees, feels like " +
         body.current.feelslike +
-        ",wind speed " +
+        ",wind speed is " +
         body.current.wind_speed +
-        ",humidity " +
-        body.current.humidity;
+        ",humidity is " +
+        body.current.humidity +
+        "%";
       callback(undefined, data);
     }
   });
