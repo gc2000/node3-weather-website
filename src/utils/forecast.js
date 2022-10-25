@@ -23,7 +23,11 @@ const forecast = (lat, long, callback) => {
         ", temperature:" +
         body.current.temperature +
         " degrees, feels like " +
-        body.current.feelslike;
+        body.current.feelslike +
+        ",wind speed " +
+        body.current.wind_speed +
+        ",humidity " +
+        body.current.humidity;
       callback(undefined, data);
     }
   });
